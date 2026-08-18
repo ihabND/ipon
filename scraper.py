@@ -19,4 +19,4 @@ try:
     for file in folder.glob("*.json"):
         print("Scraping from:", file)
 finally:
-    pass
+    passs
