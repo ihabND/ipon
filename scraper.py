@@ -1,4 +1,3 @@
-import re
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -42,7 +41,7 @@ def start_scraper():
                         with open(file, "w", encoding="utf-8") as new_links:
                             json.dump(product_links, new_links, indent=2)
                         products = []
-                        print("Written to database")
+                        print("Written to database", visited)
 
     except Exception as e:
         print("Error occured:", e)
